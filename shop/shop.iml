@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/java" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -37,7 +38,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.17" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.3.17" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.17" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.36" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:5.3.17" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-thymeleaf:2.6.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.6.5" level="project" />
@@ -73,6 +73,16 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.17" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.h2database:h2:1.4.200" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: mysql:mysql-connector-java:8.0.28" level="project" />
+    <orderEntry type="library" name="Maven: com.querydsl:querydsl-jpa:4.3.1" level="project" />
+    <orderEntry type="library" name="Maven: com.querydsl:querydsl-core:5.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.mysema.commons:mysema-commons-lang:0.2.4" level="project" />
+    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.36" level="project" />
+    <orderEntry type="library" name="Maven: com.querydsl:querydsl-apt:4.3.1" level="project" />
+    <orderEntry type="library" name="Maven: com.querydsl:querydsl-codegen:5.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.querydsl:codegen-utils:5.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jdt:ecj:3.26.0" level="project" />
+    <orderEntry type="library" name="Maven: io.github.classgraph:classgraph:4.8.108" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.22" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:2.6.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test:2.6.5" level="project" />

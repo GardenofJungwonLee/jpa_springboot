@@ -2,10 +2,14 @@ package com.shop.repository;
 
 import com.shop.entity.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 
 import java.util.List;
 
-public interface ItemRepository extends JpaRepository<Item,Long> {
+public interface ItemRepository extends JpaRepository<Item,Long>,
+QuerydslPredicateExecutor<Item>{
     List<Item> findByItemNm(String itemNm);
 
     List<Item> findByItemNmOrItemDetail(String itemNm, String itemDetail);
@@ -13,4 +17,9 @@ public interface ItemRepository extends JpaRepository<Item,Long> {
     List<Item> findByPriceLessThan(Integer price);
 
     List<Item> findByPriceLessThanOrderByPriceDesc(Integer price);
+
+    @Query(value = "select * from item i where i.item_detail like " +
+            "%:itemDetail% order by i.price desc", nativeQuery = true)
+    List<Item> findByItemDetail (@Param("itemDetail") String itemDetail);
+
 }
